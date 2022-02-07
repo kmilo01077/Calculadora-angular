@@ -1,18 +1,19 @@
 <form>
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Numero 1</label>
-      <input type="text" class="form-control" placeholder="valor 1" required #num1>
+      <input type="Number" class="form-control" placeholder="valor 1" required #num1>
       
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">numero 2</label>
-      <input type="text" class="form-control" placeholder="valor 1" required #num2>
+      <input type="number" class="form-control" placeholder="valor 1" required #num2>
     </div>
     <button type="button" class="btn btn-primary" (click)="getCalculo(num1.value,num2.value)">Calcular</button>
    <br>
    
   </form>
   <div>
+    
   <p>Resultado de la suma es: {{total}}</p> 
   <p>Resultado de la resta es: {{resta}}</p>
   <p>Resultado de la multiplicación es: {{multiplicacion}}</p>

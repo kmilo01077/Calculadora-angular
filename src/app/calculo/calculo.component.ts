@@ -22,6 +22,7 @@ export class CalculoComponent implements OnInit {
     this.division= parseInt(num1)/parseInt(num2);
     this.potencia= Math.pow(parseInt(num1),parseInt(num2)) ;
     this.total= parseInt(num1)+parseInt(num2);
+        
   }
 
   ngOnInit(): void {

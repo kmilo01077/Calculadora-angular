@@ -1,22 +1,26 @@
-<form>
+<form id="Mi_Formulario">
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Numero 1</label>
-      <input type="Number" class="form-control" placeholder="valor 1" required #num1>
+      <label for="exampleInputEmail1" class="form-label">Número 1</label>
+      <input type="Number" id="form1" class="form-control" placeholder="Digite número 1" required #num1>
       
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">numero 2</label>
-      <input type="number" class="form-control" placeholder="valor 1" required #num2>
+      <label for="exampleInputPassword1" class="form-label">Número 2</label>
+      <input type="number" class="form-control" placeholder="Digite número 2" required #num2>
     </div>
     <button type="button" class="btn btn-primary" (click)="getCalculo(num1.value,num2.value)">Calcular</button>
+    <button type="reset" class="btn btn-primary" (click)="limpiarFormulario(num1.value,num2.value)">Borrar</button>
    <br>
    
   </form>
-  <div>
-    
+  <br>
+  <div>    
+   <h5> 
   <p>Resultado de la suma es: {{total}}</p> 
   <p>Resultado de la resta es: {{resta}}</p>
   <p>Resultado de la multiplicación es: {{multiplicacion}}</p>
   <p>Resultado de la division es: {{division}}</p>
   <p>Resultado de la potenciación es: {{potencia}}</p>
+</h5> 
+
 </div>
